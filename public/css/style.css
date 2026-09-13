@@ -1,0 +1,243 @@
+/*user*/
+/* .inp {
+    padding: 6px;
+}
+
+.inp input[type="search"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.inp input[type="search"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.inp input[type="search"]::placeholder {
+    color:white;
+} */
+.add_user {
+    display: inline-block;   /* important */
+    width: 110px;
+    height: 32px;
+    background-color: rgb(59, 59, 244);
+    color: white;
+    margin: 10px;
+    padding-top: 5px;
+    text-align: center;
+    line-height: 20px; /* centre verticalement le texte */
+    text-decoration: none;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    
+}
+.add_user:hover {
+    background-color:  rgb(22, 22, 192);;
+    color: white;
+    text-decoration: none;
+}
+.color-danger {
+    color: red;           
+    text-decoration: none; /* supprime le soulignement */
+    font-weight: 500;
+    transition: 0.3s;
+     margin-left: 10px; /* espace à gauche */
+}
+.color-danger:hover{
+    color:rgb(231, 42, 42);
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.avatar-wrapper {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.avatar-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Bouton positionné en bas */
+.edit-btn {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4e73df;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+    background: #2e59d9;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+footer {
+    margin-top: auto;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* empêche scroll global */
+}
+
+/* SIDEBAR */
+.sidebar {
+    height: 100vh;
+    overflow-y: auto; /* scroll uniquement ici */
+}
+
+/* CONTENU */
+#content-wrapper {
+    flex: 1;
+    overflow-y: auto; /* scroll du contenu */
+}
+.sidebar {
+    height: 100vh;
+    overflow-y: auto;
+
+    /* cacher scrollbar (Chrome, Edge, Safari) */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge ancien */
+}
+
+/* Chrome, Safari */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+/* Sidebar toujours scrollable */
+.sidebar {
+    height: 100vh;
+    overflow-y: auto !important;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Quand sidebar est togglé */
+body.sidebar-toggled .sidebar {
+    overflow-y: auto !important;
+}
+#wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+footer {
+    margin-top: 30px;
+}
+
+/*  login*/
+
+.bg-gradient-primary-custom{
+    background: linear-gradient(135deg, #26a69a, #00796b);
+}
+.text-pr{
+    color:  #004d40;
+}
+
+/* fin login */
+
+.suggestions {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 2px;
+
+    max-height: 100px;
+    overflow-y: auto;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+    
+}
+.suggestions div {
+    padding: 4px 6px;
+    transition: 0.15s;
+}
+
+.suggestions div:hover {
+    background: linear-gradient(135deg, #26a69a, #00796b);
+    color: #fff;
+}
+.suggestions div {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.suggestions div:last-child {
+    border-bottom: none;
+}
+
+
+body {
+    background: #f4f6f9;
+}
+
+
+
+/* KPI CARDS */
+.kpi-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+}
+
+.kpi-card i {
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+/* COLORS */
+.blue { background: linear-gradient(135deg,#4e73df,#224abe); }
+.green { background: linear-gradient(135deg,#1cc88a,#13855c); }
+.purple { background: linear-gradient(135deg,#6f42c1,#4e2a84); }
+.red { background: linear-gradient(135deg,#e74a3b,#be2617); }
+.user-card {
+    background: linear-gradient(135deg, #4e73df, #224abe);
+    color: white;
+}
